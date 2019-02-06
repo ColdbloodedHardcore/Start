@@ -1,0 +1,8 @@
+
+table {
+    border: blue;
+    border-style: 5px;
+    font-size: 10px;
+    width: 600px;
+    border-collapse: collapse;
+}
