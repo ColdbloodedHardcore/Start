@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+.red{
+ color: red;
+}
+.orange{
+    color: orange;
+}
+.yellow{
+    color: yellow;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.darkblue{
+    color: darkblue;
+}
+.purple{
+    color: purple;
+}
+body{
+    font-size: 40px;
+}

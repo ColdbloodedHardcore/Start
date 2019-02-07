@@ -1,0 +1,29 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: separate; 
+    border-spacing: 150px 50px;
+}
+.top{
+    vertical-align: top;
+}
+.bot{
+    text-align: right;
+    vertical-align: text-top;
+}
+.bottom{
+    text-align: left;
+}
+.size{
+    font-size: 30px;
+    text-align: center;
+}
+.sizen{
+    font-size: 17px;
+}
+.task{
+    font-size: 12px;
+}
