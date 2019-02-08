@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-size: 40px;
 }
 h1 {
     color: white;
@@ -24,7 +25,4 @@ h1 {
 }
 .purple{
     color: purple;
-}
-body{
-    font-size: 40px;
 }
