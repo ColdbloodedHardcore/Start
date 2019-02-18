@@ -3,33 +3,39 @@ body{
     color: white;
     font-size: 16px;       
     background-color: black;
+    padding: 15%; 
 }    
+.items{
+    background-color: #121116;    
+    height: 100%; 
+    padding: 5%; 
+    text-align: center;
+}
 .container{
-    margin: 125px auto;
-    max-width: 250px; 
-    text-align: center;
-    height: 5px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;      
 }
-.d-flex {
-    display: flex !important;
-    align-items: center;
-}  
-.fb{
-    text-align: center;
-    padding: 15px;
+.row {
+    
 }
-.tw{
-    text-align: center;
-    padding: 15px;
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+    padding: 10%;
 }
-.gg{
+.col {
+    float: left;
     text-align: center;
-    padding: 15px;
 }
-.dr{
-    text-align: center;
-    padding: 15px;
+.col-3 {
+    width: calc( (100% / 12) * 3 );
 }
 h1{
     font-weight: 100;
+}
+a{
+    color: #00C8FC;
+    text-decoration: none;
 }
