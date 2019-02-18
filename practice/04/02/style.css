@@ -14,7 +14,6 @@ body{
     display: flex !important;
     margin: 100px auto;   
     background-color: #1D1B1C; 
-    
 }  
 * {
     box-sizing: border-box;
@@ -37,12 +36,13 @@ img{
     padding: 10%;    
 }
 .border {
-    
     width: 70px;	
     height: 70px; 
     background: #fc0; 
     outline: 2px solid #000;     
-    border-radius: 10px;     
+    border-radius: 10px;  
+    position: relative;   
+    left: 150px;
 }
 h1{
     font-weight: lighter;
