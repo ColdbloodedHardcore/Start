@@ -1,38 +1,39 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-size: 16px;       
-    background-color: black;
+    font-size: 16px;     
+    background-color: black; 
+    padding: 10%; 
 }  
+.items{
+    background-color: #1D1B1C;
+    height: 100%;   
+    padding: 10%; 
+}
 .container{     
-    width: 175%;
+    width: 100%;
     margin: 0 auto;
-    max-width: 1000px; 
+    max-width: 1170px; 
 }  
-.d-flex {
-    display: flex !important;
-    margin: 100px auto;   
-    background-color: #1D1B1C; 
-}  
-* {
-    box-sizing: border-box;
+.row {
+
+}
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    text-align: center;
+}
+.col-4 {
+    width: calc( (100% / 12) * 4 );
 }
 img{
-    width: 30px;
-    height: 30px;
-    align-content: center;
-}
-.first{
-    text-align: center;
-    padding: 10%;    
-}
-.second{
-    text-align: center;
-    padding: 10%;    
-}
-.third{
-    text-align: center;
-    padding: 10%;    
+    width: 35px;
+    height: 35px;
+    padding: 25%;
 }
 .border {
     width: 70px;	
