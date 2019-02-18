@@ -1,0 +1,35 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 16px;       
+    background-color: black;
+}    
+.container{
+    margin: 125px auto;
+    max-width: 250px; 
+    text-align: center;
+    height: 5px;
+}
+.d-flex {
+    display: flex !important;
+    align-items: center;
+}  
+.fb{
+    text-align: center;
+    padding: 15px;
+}
+.tw{
+    text-align: center;
+    padding: 15px;
+}
+.gg{
+    text-align: center;
+    padding: 15px;
+}
+.dr{
+    text-align: center;
+    padding: 15px;
+}
+h1{
+    font-weight: 100;
+}
