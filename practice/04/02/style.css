@@ -3,16 +3,16 @@ body{
     color: white;
     font-size: 16px;       
     background-color: black;
+    background-color: #1D1B1C; 
 }  
 .container{     
     width: 175%;
-    margin: 0 auto;
-    max-width: 1000px; 
+    margin: 0 auto; 
 }  
 .d-flex {
     display: flex !important;
+    max-width: 1000px;
     margin: 100px auto;   
-    background-color: #1D1B1C; 
 }  
 * {
     box-sizing: border-box;
