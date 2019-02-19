@@ -1,49 +1,65 @@
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;    
-}    
-.items{  
-    height: 100%; 
-    padding: 15%; 
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+.items {
+    height: 100%;
+    padding: 15%;
     text-align: center;
 }
-.container{
+
+.container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1170px;      
+    max-width: 1170px;
 }
-.row {
-    
-}
+
+.row {}
+
 .row:after {
     content: '';
     display: block;
     clear: both;
 }
+
 .col {
-    float: left;    
+    float: left;
 }
+
 .col-3 {
-    width: calc( (100% / 12) * 3 );
+    width: calc((100% / 12) * 3);
 }
-img{
+
+.img-wrap {
     width: 60px;
-    height: 50px;
-    padding: 5%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
 }
-h4{
+
+img {
+    /* padding: 5%; */
+}
+
+h4 {
     font-weight: 500;
     padding: 5%;
 }
-hr{
+
+hr {
     width: 30%;
     height: 2px;
-    border: none; 
-    color: #00E2FF; 
+    border: none;
+    color: #00E2FF;
     background-color: #00E2FF;
 }
-p{
-    font-size: 14px;   
-    font-weight: 100;  
-    padding: 5%; 
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5%;
 }
