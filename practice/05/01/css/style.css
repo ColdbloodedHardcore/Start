@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 3%;
+    height: 2px;
+    border: none;
+    color: grey;
+    background-color: grey;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3%;
+    line-height: 150%;
+}
+
+.container-top {
+    text-align: center;
+}
+
+.imag:hover .see {
+    display: none;
+}
+
+.imag .unseen {
+    display: none;
+}
+
+.imag:hover .unseen {
+    display: block;
+    margin: 0 auto;
+}
+
+.background:hover {
+    background-color: blue;
+    width: 269px;
+    height: 268px;
+}
+
+.ginger:hover .ginger-see {
+    display: none;
+}
+
+.ginger .ginger-unseen {
+    display: none;
+}
+
+.ginger:hover .ginger-unseen {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
