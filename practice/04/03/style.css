@@ -1,35 +1,51 @@
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-size: 16px;       
+    font-size: 16px;
     background-color: black;
-}    
-.container{
-    margin: 125px auto;
-    max-width: 250px; 
-    text-align: center;
-    height: 5px;
+    padding: 15%;
 }
-.d-flex {
-    display: flex !important;
-    align-items: center;
-}  
-.fb{
+
+.items {
+    background-color: #121116;
+    height: 100%;
+    padding: 5%;
     text-align: center;
-    padding: 15px;
 }
-.tw{
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.row {}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+    /* padding: 10%; */
+}
+
+.col {
+    float: left;
     text-align: center;
-    padding: 15px;
 }
-.gg{
-    text-align: center;
-    padding: 15px;
+
+.col-3 {
+    width: calc((100% / 12) * 3);
 }
-.dr{
-    text-align: center;
-    padding: 15px;
-}
-h1{
+
+h1 {
     font-weight: 100;
+}
+
+a {
+    color: #00C8FC;
+    text-decoration: none;
+}
+
+.social {
+    padding: 15px 0;
 }

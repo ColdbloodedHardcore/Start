@@ -1,48 +1,56 @@
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-size: 16px;       
+    font-size: 16px;
     background-color: black;
-    background-color: #1D1B1C; 
-}  
-.container{     
-    width: 175%;
-    margin: 0 auto; 
-}  
-.d-flex {
-    display: flex !important;
-    max-width: 1000px;
-    margin: 100px auto;   
-}  
-* {
-    box-sizing: border-box;
+    padding: 10%;
 }
-img{
-    width: 30px;
-    height: 30px;
-    align-content: center;
+
+.items {
+    background-color: #1D1B1C;
+    height: 100%;
+    padding: 10%;
 }
-.first{
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.row {}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
     text-align: center;
-    padding: 10%;    
 }
-.second{
-    text-align: center;
-    padding: 10%;    
+
+.col-4 {
+    width: calc((100% / 12) * 4);
 }
-.third{
-    text-align: center;
-    padding: 10%;    
+
+img {
+    width: 35px;
+    height: 35px;
+    padding: 25%;
 }
+
 .border {
-    width: 70px;	
-    height: 70px; 
-    background: #fc0; 
-    outline: 2px solid #000;     
-    border-radius: 10px;  
-    position: relative;   
-    left: 150px;
+    width: 70px;
+    height: 70px;
+    background: #fc0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 0 auto;
 }
-h1{
+
+h1 {
     font-weight: lighter;
 }
