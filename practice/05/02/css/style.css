@@ -9,6 +9,10 @@ h2 {
     letter-spacing: 10px;
 }
 
+h3 {
+    text-align: left;
+}
+
 hr {
     width: 3%;
     height: 5px;
@@ -25,18 +29,20 @@ hr {
     background-color: grey;
 }
 
+.form {
+    float: left;
+    width: 75%;
+}
+
 .form--button {
     width: 200px;
     height: 50px;
     border: none;
     background: #EA6852;
     margin: 0 auto;
+    margin-top: 50px;
     color: white;
     margin-right: 400px;
-}
-
-.form {
-    width: 100%;
 }
 
 .form--text {
@@ -49,32 +55,38 @@ hr {
     border-right: none;
 }
 
+.list {
+    padding: 50px;
+    margin: 0 auto;
+    float: right;
+    width: 25%;
+}
+
 .fab {
     width: 200px;
-    height: 50px;       
+    height: 50px;
     color: white;
     font-size: 30px;
     padding: 10px;
-    margin-bottom: 3px;    
+    margin-bottom: 3px;
 }
 
-.fa-behance{
+.fa-behance {
     background: #0E9DF9;
-} 
+}
 
-.fa-twitter-square{
+.fa-twitter-square {
     background: #51D7FD;
 }
 
-.fa-dribbble{
+.fa-dribbble {
     background: #FA4D9C;
 }
 
-.fa-facebook{
+.fa-facebook {
     background: #2A62AC;
 }
 
-.fa-google-plus{
+.fa-google-plus {
     background: #F13031;
 }
-
