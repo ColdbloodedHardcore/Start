@@ -5,21 +5,10 @@
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    background-color: #F6F6F6;
-    padding: 10px;
-
 }
-.container-second {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    padding: 10px;
 
-}
 .row {
-    text-align: center;
-    padding: 10px;
+    
 }
 .row:after {
     content: '';
