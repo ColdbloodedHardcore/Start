@@ -1,3 +1,35 @@
+.container-first {
+    background-image: url("bg.jpg");
+    background-size: cover;    
+    box-shadow:0 0 0 550px rgba(0, 0, 0, 0.700) inset;
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.container-second {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.container-third {
+    background-color: #C9C9CB;
+    height: 100px;
+    padding: 25px;
+    width: auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
 body {
     font-family: 'Hind', sans-serif;
 }
@@ -7,10 +39,6 @@ h2 {
     text-transform: uppercase;
     font-size: 35px;
     letter-spacing: 7px;
-}
-
-h3 {
-    text-align: left;
 }
 
 hr {
@@ -30,10 +58,9 @@ hr {
 }
 
 .form {
-    float: left;
-    width: 62%;
-    margin: 0 4%;
+    margin: 0 auto;
     padding: 100px;
+    text-align: left;
 }
 
 .form--button {
@@ -47,8 +74,13 @@ hr {
     margin-right: 400px;
 }
 
+.form--button:hover{
+    background: yellow;
+    cursor: pointer;
+}
+
 .form--text {
-    width: 770px;
+    width: 100%;
     height: 70px;
     border-bottom-color: grey;
     border-width: 0 0 1px;
@@ -57,13 +89,10 @@ hr {
     border-right: none;
 }
 
-.list {
+.list {    
     padding: 150px;
     margin: 0 auto;
-    float: right;
-    width: 32%;
-    margin: 0 4%;
-    
+    text-align: right;
 }
 
 .fab {
@@ -73,24 +102,45 @@ hr {
     font-size: 30px;
     padding: 10px;
     margin-bottom: 3px;
+    text-align: center;
 }
 
 .fa-behance {
     background: #0E9DF9;
 }
 
+.fa-behance:hover{
+    background:  greenyellow;
+}
+
 .fa-twitter-square {
     background: #51D7FD;
+}
+
+.fa-twitter-square:hover{
+    background: greenyellow;
 }
 
 .fa-dribbble {
     background: #FA4D9C;
 }
 
+.fa-dribbble:hover{
+    background:  greenyellow;
+}
+
 .fa-facebook {
     background: #2A62AC;
 }
 
+.fa-facebook:hover{
+    background:  greenyellow;
+}
+
 .fa-google-plus {
     background: #F13031;
+}
+
+.fa-google-plus:hover{
+    background:  greenyellow;
 }
