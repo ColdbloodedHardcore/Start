@@ -1,26 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: url(../1.jpg);
+    background-position: top;
+}
+
 i {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 30px;
+    line-height: 5.0;
     display: inline-block;
 }
 
-i+i {
+.fab {
+    margin: 10px;
     margin-left: 5px;
 }
 
 .icons {
-    vertical-align: middle;    
+    padding-top: 125px;
     display: flex;
-    justify-content: space-around;
-    margin-left: -20px;
+    justify-content: space-between;
 }
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+h1 {
+    font-size: 41px;
+    margin-left: 25px;
+    line-height: 1.0;
 }
 
 a {
@@ -40,33 +48,30 @@ img {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
+    margin: 0px;
 }
 
 .hello {
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .container-top {
     background-color: #f7f7f1;
     text-align: center;
     height: 380px;
-    padding: 150px;
+    padding: 115px;
 }
 
 .container-mid {
-    display: grid;
-    grid-template-columns: repeat(12, 97.5px);
-    grid-template-rows: 370px 30px 400px;
-    
-}
-
-.container-mid {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
     background-color: #f7f7f1;
     width: 1170px;
     height: 720px;
-    font-size: 15px;
 }
 
 .container-mid a {
@@ -74,31 +79,16 @@ h4 {
 }
 
 .box1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-} 
-
-.box3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3; 
-}
-
-.box1 {
     text-align: left;
-    padding-top: -50px;
+    line-height: 0.9;
+    font-size: 20px;
+    padding-left: 70px;
+    margin: -5px;
 }
 
 .box2 {
-    grid-column-start: 5;
-    grid-row-start: 11;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    padding-right: 69px;
 }
-
 
 .container-bot {
     background-image: url("bg--footer.jpg");
