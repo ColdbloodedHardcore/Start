@@ -13,6 +13,11 @@ i {
     margin-left: 5px;
 }
 
+.fab:hover {
+    background: rgb(183, 0, 255);
+    cursor: pointer;
+}
+
 .icons {
     padding-top: 125px;
     display: flex;
@@ -37,18 +42,26 @@ a {
 img {
     padding-bottom: 50px;
 }
-.title1, .title2 {
+
+.title1,
+.title2 {
     display: block;
 }
+
 .title1:after {
     display: inline-block;
     content: '';
-    width: 60px;
+    width: 66px;
     height: 5px;
     background-color: black;
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+.title2 {
+    margin-left: 66px;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -75,6 +88,8 @@ h4 {
 }
 
 .container-mid {
+    display: flex;
+    justify-content: space-around;
     padding-bottom: 50px;
     background-color: #f7f7f1;
     height: 720px;
