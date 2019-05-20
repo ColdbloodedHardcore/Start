@@ -11,25 +11,21 @@
         · y /= x + 5 % z ;  
         · z = x++ + y * 5 ; 
         · x = y - x++ * z ;*/
-        
+
         var x = 6;
         var y = 15;
         var z = 4;
 
-        result = x += y - x++ * z;
-        document.write(result + "<br />");
-
-        result = z = --x - y * 5;
-        document.write(result + "<br />");
-
-        result = y /= x + 5 % z;
-        document.write(result + "<br />");
-
-        result = z = x++ + y * 5;
-        document.write(result + "<br />");
-
-        result = x = y - x++ * z;
-        document.write(result + "<br />");
+        x += y - x++ * z;
+        document.write(x, '<br/>');
+        z = --x - y * 5;
+        document.write(z, '<br/>');
+        y /= x + 5 % z;
+        document.write(y, '<br/>');
+        z = x++ + y * 5;
+        document.write(z, '<br/>');
+        x = y - x++ * z;
+        document.write(x, '<br/>');
     </script>
 
 </head>

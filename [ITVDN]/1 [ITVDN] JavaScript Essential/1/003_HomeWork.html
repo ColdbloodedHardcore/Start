@@ -12,10 +12,10 @@
         var r = 10;
         document.write('Радиус цилиндра = ', r, '<br/> Высота цилиндра = ', h, '<br/>');
 
-        var v = Math.PI * Math.pow(r, 2) * h;
+        var v = Math.PI * (r * 2) * h;
         document.write('Объем цилиндра = ', v, '<br/>');
 
-        var s = (Math.PI * Math.pow(r, 2)) * 2 + (Math.PI * 2 * r * h);
+        var s = (Math.PI * 2) * r * (r + h);
         document.write('Площадь поверхности цилиндра = ', s, '<br/>');
     </script>
 
