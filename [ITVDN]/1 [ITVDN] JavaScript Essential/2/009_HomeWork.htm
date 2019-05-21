@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Задача for JS</title>
+    <script type="text/javascript">
+        /*Используя циклы нарисуйте в браузере с помощью пробелов (&nbsp) и звездочек (*): 
+        · Прямоугольник 
+        · Прямоугольный треугольник  
+        · Равносторонний треугольник 
+        · Ромб.*/
+
+        //Прямоугольник
+        for (var a = 0; a < 10; a++) {
+            for (var b = 0; b < 15; b++) {
+                document.write("&nbsp * &nbsp");
+            }
+            document.write("<br />");
+        }
+        document.write("<hr/>");
+        document.write("<br/>");
+
+        //Прямоугольный треугольник  
+        for (var a = 0; a < 10; a++) {
+            for (var b = 0; b < a; b++) {
+                document.write("&nbsp * &nbsp");
+            }
+            document.write("<br />");
+        }
+        document.write("<hr/>");
+        document.write("<br/>");
+
+        //Равносторонний треугольник
+        var n = 7;
+        var l = 0;
+
+        for (var i = 0; i < n; i++) {
+            for (var k = 0; k < (2 * n / 2 - i); k++) {
+                document.write(" &nbsp ");
+            }
+            for (var j = 0; j < l; j++) {
+                document.write("&nbsp * ");
+            }
+            l++;
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+        document.write("<br/>");
+
+        var nn = 5;
+        var ll = 0;
+
+        for (var ii = 0; ii < nn; ii++) {
+            for (var kk = 0; kk < (2 * nn / 2 - ii); kk++) {
+                document.write(" &nbsp&nbsp");
+            }
+            for (var jj = 0; jj < ll; jj++) {
+                document.write(" &nbsp * ");
+            }
+            ll++;
+            document.write("<br/>");
+        }
+
+        for (var ii = 0; ii < nn; ii++) {
+            for (var kk = 0; kk < (2 / nn * 2 + ii); kk++) {
+                document.write(" &nbsp");
+            }
+            for (var jj = 0; jj < ll; jj++) {
+                document.write("&nbsp * ");
+            }
+            ll--;
+            document.write("<br/>");
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
