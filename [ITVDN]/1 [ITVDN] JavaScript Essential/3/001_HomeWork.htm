@@ -28,14 +28,37 @@
         document.write('Hаименьшее значение массива = ' + min + '<br />');
 
         //Общая сумма элементов
+        //1
         var a = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
         document.write('Общая сумма элементов = ' + a + '<br />');
 
+        //2
+        var sum = 0;
+        for (i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        document.write('Общая сумма элементов = ' + sum + '<br />');
+
+
         //Cреднее арифметическое всех элементов
+        //1
         var b = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / arr.length;
         document.write('Cреднее арифметическое всех элементов = ' + b + '<br />');
 
+        //2
+        var sum = 0;
+        for (i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        } 
+        sum /= arr.length;
+        document.write('Cреднее арифметическое всех элементов = ' + sum + '<br />');
+
+        var buffer = [];
         //Bывести все нечетные значения
+        for (var i = 0; i < arr.length; i++) {
+            buffer.push(arr[i] % 2 ? arr[i] : '');
+        };
+        document.write('нечетные значения = ' + buffer + '<br />');
     </script>
 
 </head>
