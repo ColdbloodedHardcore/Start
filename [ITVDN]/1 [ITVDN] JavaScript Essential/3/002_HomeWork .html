@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Двумерный массив JS</title>
+    <script type="text/javascript">
+        /*Требуется: Создать двумерный массив элементов размерностью 5х5 и заполнить его произвольными целочисленными значениями.  
+        По главной диагонали все числа со знаком (-) заменить на 0, а числа со знаком (+) на число 1.*/
+
+        var table = new Array(5);
+        for (var i = 0; i < table.length; i++) {
+            table[i] = new Array(5);
+        }
+        for (var row = 0; row < table.length; row++) {
+            for (var col = 0; col < table[row].length; col++) {
+                if ((col + row) % 2 == 1)
+                    table[row][col] = "1";
+                else
+                    table[row][col] = "2";
+            }
+        }
+
+        table[0][0] = "0";
+        table[1][1] = "0";
+        table[2][2] = "0";
+        table[3][3] = "0";
+        table[4][4] = "0";
+
+        for (var row = 0; row < table.length; row++) {
+            for (var col = 0; col < table[row].length; col++) {
+                document.write(table[row][col]);
+            }
+            document.write("<br />");
+        }
+    </script>
+
+</head>
