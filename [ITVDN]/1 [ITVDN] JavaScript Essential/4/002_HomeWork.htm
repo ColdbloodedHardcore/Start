@@ -3,11 +3,65 @@
 <head>
     <title>Функции JS</title>
     <script type="text/javascript">
-    /*Напишите функцию, которая будет принимать число и определять:  
+        /*Напишите функцию, которая будет принимать число и определять:  
         1. Является ли введенное число положительным или отрицательным. 
         2. Является ли оно простым  
         3. Делится ли оно на 2, 5, 3, 6, 9 без остатка*/
-        
+
+
+        function sum() {
+            var a = prompt("Введите любое число:");
+            a = parseInt(a);
+
+            //Является ли введенное число положительным или отрицательным.
+            if (a > 0) {
+                document.write("Положительное = " + a);
+            } else if (a < 0) {
+                document.write("Отрицательное = " + a);
+            } else if (a == 0) {
+                document.write("Всего-лишь ноль = " + a);
+            } else if (" ") {
+                document.write("Введи число, иблан");
+            }
+
+            //2 Не работает(((((
+            /*switch (a) {
+                case "a > 0":
+                    document.write("Положительное = " + a);;
+                    break;
+                case "a < 0":
+                    document.write("Отрицательное = " + a);
+                    break;
+                case "a == 0":
+                    document.write("Всего-лишь ноль = " + a);
+                    break;
+                case ' ':
+                    document.write("Введи число, иблан");
+                    break;
+                default:
+                    document.write("Ну ты ибланище");
+
+            }*/
+        }
+
+        sum();
+
+
+        //Является ли оно простым
+        function del() {
+            var a = prompt("Введите любое число:");
+            a = parseInt(a);
+
+            if (a / a, a / 1) {
+                document.writeln("Простое = " + a);
+            } else {
+                document.writeln("Составное = " + a);
+            }
+
+
+        }
+
+        //del();
     </script>
 
 </head>
