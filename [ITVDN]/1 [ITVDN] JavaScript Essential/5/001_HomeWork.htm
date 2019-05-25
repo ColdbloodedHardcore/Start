@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Объекты JS</title>
+    <script type="text/javascript">
+        /*Создать объект «Документ», в котором определить свойства «Заголовок, Тело, Футер, Дата». 
+        Создать в объекте вложенный объект – «Приложение». Создать в объекте «Приложение», вложенные объекты, 
+        «Заголовок, Тело, Футер, Дата». Создать методы для заполнения и отображения документа.*/
+
+        var Document = {
+            title: "Заголовок1",
+            body: "Тело1",
+            footer: "Футер1",
+            data: {
+                attachment: {
+                    title: "Заголовок2",
+                    body: "Тело2",
+                    footer: "Футер2",
+                    data: "25.05.2019"
+                }
+            }
+        };
+
+        document.write("<p><h1>" + Document.title);
+        document.write("<p><h1>" + Document.body);
+        document.write("<p><h1>" + Document.footer);
+        document.write("<p><h2>" + Document.data.attachment.title);
+        document.write("<p><h2>" + Document.data.attachment.body);
+        document.write("<p><h2>" + Document.data.attachment.footer);
+        document.write("<p><h2>" + Document.data.attachment.data);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

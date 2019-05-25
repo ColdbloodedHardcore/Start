@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Объекты JS</title>
+    <script type="text/javascript">
+        /*Создать объект «Менеджер» с помощью блока инициализации, задать свойства «Имя, Фамилия, возраст …».  
+        Создать объект «Секретарь» с помощью конструктора, задать свойства «Имя, Фамилия, возраст …».*/
+
+        //C помощью блока инициализации
+        var Manager = {
+            firstName: "Валентина",
+            lastName: "Павлона",
+            age: "54"
+        };
+
+        document.write("<p><h2 style='color:red'>Менеджер" + "<br />");
+        document.write("<p><h1 style='color:yellow'>" + Manager.firstName);
+        document.write("<p><h1 style='color:yellow'>" + Manager.lastName);
+        document.write("<p><h1 style='color:yellow'>" + Manager.age);
+
+        //C помощью конструктора
+        var Scorekeeper = new Object();
+        Scorekeeper.firstName = "Марина";
+        Scorekeeper.lastName = "Ткач";
+        Scorekeeper.age = "21";
+
+        document.write("<p><h2 style='color:red'>Секретарь" + "<br />");
+        document.write("<p><h1 style='color:purple'>" + Scorekeeper.firstName);
+        document.write("<p><h1 style='color:purple'>" + Scorekeeper.lastName);
+        document.write("<p><h1 style='color:purple'>" + Scorekeeper.age);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
