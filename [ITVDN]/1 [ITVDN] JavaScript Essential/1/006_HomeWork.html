@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sixth Lesson JS</title>
+
+    <script type="text/javascript">
+        //Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце.
+        var seconds = 60;
+        var minute = 60;
+        var hour = seconds * minute;
+        var day = hour * 24;
+        var mouth = day * 30;
+
+        document.write("Количество секунд в часе = " + hour + "<br />");
+        document.write("Количество секунд в сутках = " + day + "<br />");
+        document.write("Количество секунд в месяце = " + mouth + "<br />");
+        document.write("<hr />");
+
+        //Создайте три переменные - час, минута, секунда. С их помощью выведите текущее время в формате 'час:минута:секунда'
+        var seconds = 15;
+        var minute = 20;
+        var hour = 15;
+
+        document.write(hour + ':' + minute + ':' + seconds);
+        document.write("<hr />");
+
+        //Создайте переменную, присвойте ей число. Возведите это число в квадрат. Выведите его на экран.
+        var a = 144;
+        var b = Math.sqrt(a);
+
+        document.write(b);
+        document.write("<hr />");
+
+        /*Переделайте этот код так, чтобы в нем использовались операции +=, -=, *=, /=. 
+        Количество строк кода при этом не должно измениться.
+        var num = 47;
+        num = num + 7;
+        num = num - 18;
+        num = num * 10;
+        num = num / 15;
+        alert(num);*/
+
+        var num = 47;
+        num += 7;
+        num -= 18;
+        num *= 10;
+        num /= 15;
+        document.write(num);
+        document.write("<hr />");
+
+        /* Переделайте этот код так, чтобы в нем использовались операции ++ и --. 
+        Количество строк кода при этом не должно измениться.
+        var num = 10;
+        num = num + 1;
+        num = num + 1;
+        num = num - 1;
+        alert(num);*/
+
+        var num = 10;
+        num = num++;
+        num = num++;
+        num = num--;
+        document.write(num);
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
