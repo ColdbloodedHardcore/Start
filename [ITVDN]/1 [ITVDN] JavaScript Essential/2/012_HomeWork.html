@@ -3,69 +3,69 @@
 <head>
     <title>Задачи JS</title>
     <script type="text/javascript">
-        // /*В переменной day лежит какое-то число из интервала от 1 до 31. 
-        // Определите в какую декаду месяца попадает это число (в первую, вторую или третью).*/
-        // var day = prompt("Введите число от 1 до 31:");
-        // var day = parseInt(day);
+        /*В переменной day лежит какое-то число из интервала от 1 до 31. 
+        Определите в какую декаду месяца попадает это число (в первую, вторую или третью).*/
+        var day = prompt("Введите число от 1 до 31:");
+        var day = parseInt(day);
 
-        // if (day >= 1 && day <= 10) {
-        //     document.write("First");
-        // } else if (day >= 11 && day <= 20) {
-        //     document.write("Second");
-        // } else if (day >= 21 && day <= 31) {
-        //     document.write("Third");
-        // } else {
-        //     document.write("Fail");
-        // }
+        if (day >= 1 && day <= 10) {
+            document.write("First");
+        } else if (day >= 11 && day <= 20) {
+            document.write("Second");
+        } else if (day >= 21 && day <= 31) {
+            document.write("Third");
+        } else {
+            document.write("Fail");
+        }
 
-        // document.write("<hr />");
+        document.write("<hr />");
 
-        // /*В переменной month лежит какое-то число из интервала от 1 до 12. 
-        // Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).*/
-        // var month = prompt("Введите число от 1 до 12:");
-        // var month = parseInt(month);
+        /*В переменной month лежит какое-то число из интервала от 1 до 12. 
+        Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).*/
+        var month = prompt("Введите число от 1 до 12:");
+        var month = parseInt(month);
 
-        // if (month >= 1 && month <= 3) {
-        //     document.write("Winter");
-        // } else if (month >= 4 && month <= 6) {
-        //     document.write("Spring");
-        // } else if (month >= 7 && month <= 9) {
-        //     document.write("Summer");
-        // } else if (month >= 10 && month <= 12) {
-        //     document.write("Autumn");
-        // } else {
-        //     document.write("Fail");
-        // }
+        if (month >= 1 && month <= 3) {
+            document.write("Winter");
+        } else if (month >= 4 && month <= 6) {
+            document.write("Spring");
+        } else if (month >= 7 && month <= 9) {
+            document.write("Summer");
+        } else if (month >= 10 && month <= 12) {
+            document.write("Autumn");
+        } else {
+            document.write("Fail");
+        }
 
-        // document.write("<hr />");
+        document.write("<hr />");
 
-        // /*Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. 
-        // Если это так - выведите 'да', в противном случае выведите 'нет'.*/
-        // var str = 'abcde';
+        /*Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. 
+        Если это так - выведите 'да', в противном случае выведите 'нет'.*/
+        var str = 'abcde';
 
-        // if (str[0] = 'a') {
-        //     document.write("A");
-        // } else {
-        //     document.write("LOH");
-        // }
-        
-        // document.write("<hr />");
+        if (str[0] = 'a') {
+            document.write("A");
+        } else {
+            document.write("LOH");
+        }
 
-        // /*Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. 
-        // Если это так - выведите 'да', в противном случае выведите 'нет'.*/
-        // var str = '12345';
+        document.write("<hr />");
 
-        // if (str[0] == 1 || str[0] == 2 || str[0] == 3) {
-        //     document.write("Yes");
-        // } else {
-        //     document.write("No");
-        // }
-        
-        // document.write("<hr />");
+        /*Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. 
+        Если это так - выведите 'да', в противном случае выведите 'нет'.*/
+        var str = '12345';
+
+        if (str[0] == 1 || str[0] == 2 || str[0] == 3) {
+            document.write("Yes");
+        } else {
+            document.write("No");
+        }
+
+        document.write("<hr />");
 
         /*Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.*/
         var str = '197';
-                
+
         var sum = str[0] + str[1] + str[2];
         document.write(sum + "<br/>");
 
@@ -73,7 +73,13 @@
 
         /* Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. 
         Если это так - выведите 'да', в противном случае выведите 'нет'.*/
+        var str = '357753';
 
+        if (str[0] + str[1] + str[2] == str[3] + str[4] + str[5]) {
+            document.write("True");
+        } else {
+            document.write("False");
+        }
     </script>
 
 </head>
