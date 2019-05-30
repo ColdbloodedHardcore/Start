@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <title>For для массивов JS</title>
+    <script type="text/javascript">
+        /*Дан массив с элементами 2, 5, 9, 15, 0, 4. 
+        С помощью цикла for и оператора if выведите на экран столбец тех элементов массива, которые больше 3-х, но меньше 10.*/
+        var arr = [2, 5, 9, 15, 0, 4];
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] > 3 && arr[i] < 10) {
+                document.write(arr[i] + '<br />')
+            }
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив с числами. Числа могут быть положительными и отрицательными. Найдите сумму положительных элементов массива.
+        var arr = [2, 5, -8, 9, -15, 0, -7, 4];
+        var result = 0;
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                result += arr[i];
+            }
+        }
+        document.write(result + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дан массив с элементами 1, 2, 5, 9, 4, 13, 4, 10. С помощью цикла for и оператора if проверьте есть ли в массиве элемент со значением, 
+        равным 4. Если есть - выведите на экран 'Есть!' и выйдите из цикла. Если нет - ничего делать не надо.*/
+        var arr = [1, 2, 5, 9, 4, 13, 4, 10];
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] !== 4) {}
+        }
+        document.write('Есть!' + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. 
+        Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.*/
+        var arr = [10, 20, 30, 50, 235, 3000];
+        var arr = ['10', '20', '30', '50', '235', '3000'];
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i][0] === '1' || arr[i][0] === '2' || arr[i][0] === '5') {
+                document.write(arr[i] + '<br />');
+            }
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла for создайте строку '-1-2-3-4-5-6-7-8-9-'.
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        for (i = 0; i < arr.length; i++) {
+            document.write('-' + arr[i]);
+        }
+        document.write('-');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Составьте массив дней недели. С помощью цикла for выведите все дни недели, а выходные дни выведите жирным.
+        var arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i][0] === 'S') {
+                document.write('<b />' + arr[i] + '<br />');
+            }
+            document.write(arr[i] + '<br />');
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Составьте массив дней недели. С помощью цикла for выведите все дни недели, а текущий день выведите курсивом. 
+        Текущий день должен храниться в переменной day.*/
+        var arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        var day = arr[6];
+
+        for (i = 0; i < arr.length; i++) {
+            if (arr[6] === day) {
+                arr[6] = '<i />' + day;
+            }
+            document.write('<b />' + arr[i] + '<br />');
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет меньше 50. Какое число получится? 
+        Посчитайте количество итераций, необходимых для этого (итерация - это проход цикла), и запишите его в переменную num.*/
+        var n = 1000;
+        var n = parseInt(n);
+        var num = 0;
+
+        for (i = 0; i < 1000; i++) {
+            n = n / 2;
+            if (n < 50) {
+                break;
+            }
+            var num = i;
+            document.write(num + '<br />');
+        }
+    </script>
+
+</head>

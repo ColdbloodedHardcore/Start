@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>For для массивов JS</title>
+    <script type="text/javascript">
+        /*Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for выведите все эти элементы на экран*/
+        var arr = [1, 2, 3, 4, 5];
+
+        for (i = 0; i < arr.length; i++) {
+            document.write(i + '<br />');
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for найдите сумму элементов этого массива. Запишите ее в переменную result.
+        var arr = [1, 2, 3, 4, 5];
+        var result = 0;
+
+        for (i = 0; i < arr.length; i++) {
+            result += arr[i];
+        }
+        document.write(result + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан объект obj. С помощью цикла for-in выведите на экран ключи и элементы этого объекта.
+        var obj = {
+            green: 'зеленый',
+            red: 'красный',
+            blue: 'голубой'
+        }
+
+        for (var key in obj) {
+            document.write(obj[key] + '<br />');
+        }
+        document.write('<hr />');
+
+        for (var key in obj) {
+            document.write(key + '<br />');
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дан объект obj с ключами Коля, Вася, Петя с элементами '200', '300', '400'. 
+        С помощью цикла for-in выведите на экран строки такого формата: 'Коля - зарплата 200 долларов.'.*/
+        var obj = {
+            Коля: '200',
+            Вася: '300',
+            Петя: '400'
+        }
+         
+        for (var key in obj) {
+            document.write(key + ' зарплата ' + obj[key] + ' долларов' + '<br />');
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+    </script>
+
+</head>
