@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Задачи на математические функции JavaScript</title>
+    <script type="text/javascript">
+        // Даны переменные a = 10 и b = 3. Найдите остаток от деления a на b
+        var a = 10;
+        var b = 3;
+        var c = a % b;
+
+        document.write(c + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Возведите 2 в 10 степень. Результат запишите в переменную st.*/
+        var a = 2;
+        var st = Math.pow(a, 10);
+
+        document.write(st + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Найдите квадратный корень из 245.
+        var a = Math.sqrt(245);
+
+        document.write(a + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дан массив с элементами 4, 2, 5, 19, 13, 0, 10. Найдите квадратный корень из суммы кубов его элементов. 
+        Для решения воспользуйтесь циклом for.*/
+        var arr = [4, 2, 5, 19, 13, 0, 10];
+        var a = 0;
+
+        for (i = 0; i < arr.length; i++) {
+            a += Math.pow(arr[i], 3);
+        }
+        document.write(Math.sqrt(a) + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых
+        var a = Math.sqrt(379);
+
+        document.write(a.toFixed() + '<br />');
+        document.write(a.toFixed(1) + '<br />');
+        document.write(a.toFixed(2) + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, 
+        запишите результаты округления в объект с ключами 'floor' и 'ceil'.*/
+        var a = Math.sqrt(587);
+
+        document.write(Math.ceil(a) + '<br />');
+        document.write(Math.floor(a) + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число     
+        var max = Math.max(4, -2, 5, 19, -130, 0, 10);
+        var min = Math.min(4, -2, 5, 19, -130, 0, 10);
+        document.write(max + '<br />');
+        document.write(min + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Выведите на экран случайное целое число от 1 до 100.
+        function getRandomArbitary(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        document.write(getRandomArbitary(1, 100));
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Заполните массив 10-ю случайными целыми числами. (Подсказка: нужно воспользоваться циклами for или while).
+        var arr = [];
+        for (i = 0; i < 10; i++) {
+            arr[i] = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+        }
+
+        document.write(arr);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Даны переменные a и b. Найдите найдите модуль разности a и b. 
+        var a = 27;
+        var b = 81;
+        var c = a - b
+
+        document.write(Math.abs(c));
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
+        var arr = [12, 15, 20, 25, 59, 79];
+
+        var res = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5]) / arr.length;
+        document.write(res + '<br />');
+        document.write('<hr />');
+
+        //Или
+        var arr = [12, 15, 20, 25, 59, 79];
+        var res = 0;
+
+
+        for (i = 0; i < arr.length; i++) {
+            res += arr[i];
+        }
+        res /= arr.length;
+
+        document.write(res + '<br />');
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Напишите скрипт, который будет находить факториал числа. 
+        Факториал (обозначается !) - это произведение (умножение) всех целых чисел, меньше данного, и его самого. Например, 4! = 1*2*3*4.*/
+        var a = prompt("Введите число");
+        var b = 1;
+
+        do {
+            b = b * a--;
+        } while (a > 0)
+
+        document.write(b);
+        document.write('<hr />');
+        document.write('<hr />');
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
