@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Время</title>
+    <script type="text/javascript">
+        function time() {
+            var a = new Date();
+            var hours = a.getHours();
+            var minutes = a.getMinutes();
+            var seconds = a.getSeconds();
+            document.body.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
+        } 
+
+        setInterval(time, 1000);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
