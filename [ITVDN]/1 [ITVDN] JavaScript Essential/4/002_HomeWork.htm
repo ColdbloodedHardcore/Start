@@ -27,8 +27,8 @@
             //Является ли оно простым
             for (i = 0; i < a; i++) {
                 var i = a;
-                if (a / a && a / 1 && a % 2 !== 0) {
-                    document.writeln("Простое = " + a + "<br />");
+                if ((a / a && a / 1) && ((a == 2) || (a % 2 !== 0))) {
+                        document.writeln("Простое = " + a + "<br />");
                 } else {
                     document.writeln("Составное = " + a + "<br />");
                 }
