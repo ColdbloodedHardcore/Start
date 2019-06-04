@@ -44,8 +44,9 @@
         var i = 0;
 
         while (i < 100) {
-            var num = (i % 2 !== 0);
-            document.write(num + '<br>');
+            if (i % 2 == 0) {
+                document.write(i + '<br>');
+            }
             i++;
         }
         document.write('<hr />');
@@ -53,13 +54,13 @@
         //Или
 
         for (i = 0; i < 100; i++) {
-            var a = (i % 2 !== 0);
+            i % 2 == 0 ? document.write(i + "<br>") : '';
         }
         document.write(a + '<br>');
         document.write('<hr />');
         document.write('<hr />');
 
-        // // С помощью цикла найдите сумму чисел от 1 до 100.
+        // С помощью цикла найдите сумму чисел от 1 до 100.
         var i = 1;
         var sum = 0;
 
