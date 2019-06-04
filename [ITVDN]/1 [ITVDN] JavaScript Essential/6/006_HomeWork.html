@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Простые функции</title>
+    <script type="text/javascript">
+        //Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+        function square() {
+            var a = prompt('Введите число:');
+            var b = Math.pow(a, 2);
+            document.write(b);
+        } 
+
+        //делаем с помощью произвольного ввода числа, а не параметром
+        square();
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Сделайте функцию, которая возвращает сумму двух чисел.
+        function sum() {
+            var a = prompt('Введите число:');
+            var b = prompt('Введите число:');
+            var a = parseInt(a);
+            var b = parseInt(b);
+            
+            var c = a + b;
+            document.write(c);
+        } 
+
+        //делаем с помощью произвольного ввода числа, а не параметром
+        sum();
+
+        document.write('<hr />');
+        document.write('<hr />');
+        
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
