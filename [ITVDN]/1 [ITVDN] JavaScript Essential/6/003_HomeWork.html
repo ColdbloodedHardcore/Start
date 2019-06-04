@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>работы со строками в JavaScript</title>
+    <script type="text/javascript">
+        //Дана строка 'js'. Сделайте из нее строку 'JS'.
+        var str = 'js';
+        document.write(str.toUpperCase());
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка 'JS'. Сделайте из нее строку 'js'.
+        var str = 'JS';
+        document.write(str.toLowerCase());
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка 'я учу javascript!'. Найдите количество символов в этой строке.
+        var str = 'я учу javascript!';
+        document.write(str.length);
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дана строка 'я учу javascript!'. 
+        Вырежите из нее слово 'учу' и слово 'javascript' тремя разными способами (через substr, substring, slice).*/
+
+        var str = 'я учу javascript!';
+        document.write(str.substr(1, 4) + ' ' + str.substr(-11));
+        document.write('<hr />');
+
+        var str = 'я учу javascript!';
+        document.write(str.substring(2, 5) + ' ' +str.substring(6, 16));
+        document.write('<hr />'); 
+
+        var str = 'я учу javascript!';
+        document.write(str.slice(2, 5) + ' ' +str.slice(6, 16));
+        document.write('<hr />');
+        document.write('<hr />'); 
+
+        //Дана строка 'я учу javascript!'. Найдите позицию подстроки 'учу'.
+        var str = 'я учу javascript!';
+        document.write(str.indexOf('учу'));
+
+        document.write('<hr />');
+        document.write('<hr />'); 
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

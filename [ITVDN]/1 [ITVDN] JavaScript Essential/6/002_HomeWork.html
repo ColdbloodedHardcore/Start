@@ -14,13 +14,13 @@
             this.material = material;
         }
 
-        Box.prototype.volume = function() {
+        Box.prototype.volume = function () {
             document.write("<p>Box Volume = " + this.width * this.height * this.depth);
         }
 
-        Box.prototype.equals = function(other) {
+        Box.prototype.equals = function (other) {
             return this.material === other.material;
-        } 
+        }
 
         var box1 = new Box(3, 5, 7, 'Iron');
         var box2 = new Box(5, 8, 8, 'Iron');
@@ -38,6 +38,66 @@
 
         isTrue = box2.equals(box3);
         document.write("<p>Материал коробок box2 и box3 одинаковый? " + isTrue);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Создайте функцию конструктор, которая создает объект со свойством экземпляра, свойством функции-конструктора, 
+        с методом экземпляра и методом функции-конструктора имена выберите произвольно.*/
+
+        function Construct(firstName, secondName, age) {
+            this.firstName = firstName; //Свойство экземпляра
+            this.secondName = secondName; //Свойство экземпляра
+            this.age = age; //Свойство экземпляра
+
+            sayHello = function () { //метод экземпляра 
+                document.write('<p>Say hello');
+            }
+        }
+
+        Construct.prototype.sayHello = function () { //метод функции-конструктора
+            document.write('<p>Say hello to my little friend ' + this.firstName + ' ' + this.secondName + ' ' + this
+                .age);
+        }
+
+        var con = new Construct('Valera', 'Selivanov', 25); //Свойство функции-конструктора
+        con.sayHello();
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Разработайте функцию-конструктор, которая будет создавать объект Human(человек) создайте массив объектов и реализуйте функцию, 
+        которая будет сортировать элементы массива по значению свойства Age по возрастанию или по убыванию.*/
+
+        function Human(name, age) {
+            this.name = name;
+            this.age = age;
+
+        }
+
+
+        Human.prototype.list = function () {
+            document.write(this.name + ' ' + this.age + '<br />');
+        }
+
+        var first = new Human('Valentina', 86);
+        var second = new Human('Victor', 32);
+        var third = new Human('Igor', 29);
+        var fourth = new Human('Elisaveta', 17);
+        var fifth = new Human('Anna', 24); 
+
+        var humans = [first, second, third, fourth, fifth];
+
+        humans.push(new Human('alexksander', 28));
+
+       
+       
+        var sortedHumans = humans.sort(function (a, b) {
+            return a.age - b.age;
+        });
+        
+        for (let i = 0; i < sortedHumans.length; i++) {
+            const element = sortedHumans[i];
+            element.list();
+        }
     </script>
 
 </head>
