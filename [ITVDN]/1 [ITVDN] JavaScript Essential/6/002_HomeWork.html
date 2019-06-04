@@ -70,9 +70,7 @@
         function Human(name, age) {
             this.name = name;
             this.age = age;
-
         }
-
 
         Human.prototype.list = function () {
             document.write(this.name + ' ' + this.age + '<br />');
@@ -86,9 +84,7 @@
 
         var humans = [first, second, third, fourth, fifth];
 
-        humans.push(new Human('alexksander', 28));
-
-       
+        humans.push(new Human('Alexander', 28));       
        
         var sortedHumans = humans.sort(function (a, b) {
             return a.age - b.age;

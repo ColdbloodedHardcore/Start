@@ -32,20 +32,76 @@
         document.write('<hr />');
 
         var str = 'я учу javascript!';
-        document.write(str.substring(2, 5) + ' ' +str.substring(6, 16));
-        document.write('<hr />'); 
+        document.write(str.substring(2, 5) + ' ' + str.substring(6, 16));
+        document.write('<hr />');
 
         var str = 'я учу javascript!';
-        document.write(str.slice(2, 5) + ' ' +str.slice(6, 16));
+        document.write(str.slice(2, 5) + ' ' + str.slice(6, 16));
         document.write('<hr />');
-        document.write('<hr />'); 
+        document.write('<hr />');
 
         //Дана строка 'я учу javascript!'. Найдите позицию подстроки 'учу'.
         var str = 'я учу javascript!';
         document.write(str.indexOf('учу'));
 
         document.write('<hr />');
-        document.write('<hr />'); 
+        document.write('<hr />');
+
+        /*Дана переменная str, в которой хранится какой-либо текст. Реализуйте обрезание длинного текста по следующему принципу: 
+        если количество символов этого текста больше заданного в переменной n, то в переменную result запишем первые n символов 
+        строки str и добавим в конец троеточие '...'. В противном случае в переменную result запишем содержимое переменной str.*/
+        var str = 'say hello to my little friend';
+        var n = 10;
+        var result;
+
+        if (str.length > 10) {
+            var result = document.write(str.substr(0, n) + '...' + '<br />');
+        } else(str.length < 10); {
+            var result = document.write(str);
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка 'Я-учу-javascript!'. Замените все дефисы на '!' с помощью глобального поиска и замены.
+        var str = 'Я-учу-javascript!';
+        document.write(str.replace(/-/g, '!'));
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка 'я учу javascript!'. С помощью метода split запишите каждое слово этой строки в отдельный элемент массива.
+        var str = 'я учу javascript!';
+        var arr = str.split((' '));
+        document.write(arr);
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка 'я учу javascript!'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+        var str = 'я учу javascript!';
+        var arr = str.split('');
+        document.write(arr);
+
+        document.write('<hr />');
+        document.write('<hr />');
+        
+        //В переменной date лежит дата в формате '2025-12-31'. Преобразуйте эту дату в формат '31.12.2025'.
+        var date = '2025-12-31';
+        var arr = date.split('-');
+        var arr = arr.reverse();
+        var result = arr.join('.');
+        document.write(result);
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив ['я', 'учу', 'javascript', '!']. С помощью метода join преобразуйте массив в строку 'я+учу+javascript+!'.
+        var arr = ['я', 'учу', 'javascript', '!'];
+        var str = arr.join('+');
+        document.write(str);
+
+        document.write('<hr />');
+        document.write('<hr />');       
     </script>
 
 </head>
