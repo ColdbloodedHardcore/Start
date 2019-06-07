@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Задачи на приемы работы с флагами на JavaScript</title>
+    <script type="text/javascript">
+        //Дан массив с числами. Проверьте, что в этом массиве есть число 5. Если есть - выведите 'да', а если нет - выведите 'нет'.
+        var arr = [5, 8, 7, 7, 96, 28, 15, 2];
+
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] === 5;
+            if (arr[i] === 5) {
+                document.write('Yes');
+                break;
+            } else {
+                document.write('No');
+                break;
+            };
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дано число, например 31. Проверьте, что это число не делится ни на одно другое число кроме себя самого и единицы. То есть в нашем 
+        случае нужно проверить, что число 31 не делится на все числа от 2 до 30. Если число не делится - выведите 'false', 
+        а если делится - выведите 'true'.*/
+        var a = 31;
+
+        if (a / a && a / 1) {
+            document.write('True');
+        } else {
+            document.write('False');
+        };
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.
+        var arr = [1, 7, 2, 5, 78, 95, 15, 10, 10, 1, 0];      
+
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] === arr[i + 1];
+
+            if (arr[i] === arr[i + 1]) {
+                document.write('Yes');
+                
+            } else {
+                document.write('No');
+                
+            }
+        }
+        document.write('<hr />');
+
+        //Or
+        function check(arr) {
+            for (var q = 1; q < arr.length; ++q) {
+                if (arr[q] === arr[q - 1]) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        document.write(check(arr) ? "Да" : "Нет");
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
