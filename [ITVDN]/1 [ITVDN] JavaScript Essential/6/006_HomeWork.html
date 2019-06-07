@@ -8,7 +8,7 @@
             var a = prompt('Введите число:');
             var b = Math.pow(a, 2);
             document.write(b);
-        } 
+        }
 
         //делаем с помощью произвольного ввода числа, а не параметром
         square();
@@ -25,13 +25,59 @@
 
             var c = a + b;
             document.write(c);
-        } 
-        
+        }
+
         sum();
 
         document.write('<hr />');
         document.write('<hr />');
-        
+
+        // Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
+        function div() {
+            var a = 100;
+            var b = 25;
+            var c = 36;
+
+            var div = (a - b) / c;
+            document.write(div);
+        }
+
+        div();
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
+        function dayOfWeek() {
+            var day = prompt('Введите число: 1 - 7');
+
+            switch (day) {
+                case ('1'):
+                    document.write('Monday');
+                    break;
+                case ('2'):
+                    document.write('Tuesday');
+                    break;
+                case ('3'):
+                    document.write('Wednesday');
+                    break;
+                case ('4'):
+                    document.write('Thursday');
+                    break;
+                case ('5'):
+                    document.write('Friday');
+                    break;
+                case ('6'):
+                    document.write('Saturday');
+                    break;
+                case ('7'):
+                    document.write('Sunday');
+                    break;
+                default:
+                    document.write('Error');
+            }
+        }
+
+        dayOfWeek();
     </script>
 
 </head>
