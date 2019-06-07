@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Задачи на приемы работы с циклами на JavaScript</title>
+    <script type="text/javascript">
+        //С помощью цикла for сформируйте строку '123456789' и запишите ее в переменную str.        
+        for (var i = 1; i < 10; i++) {
+            var str = i;
+            document.write(str);
+        }
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //С помощью цикла for сформируйте строку '987654321' и запишите ее в переменную str.        
+        for (var i = 9; i > 0; i--) {
+            var str = i;
+            document.write(str);
+        }
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //С помощью цикла for сформируйте строку '-1-2-3-4-5-6-7-8-9-' и запишите ее в переменную str.      
+        var a = '-';
+        for (let i = 1; i <= 9; i++) {
+            str = i;
+            document.write(a + str);
+        }
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Нарисуйте пирамиду, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+        x
+        xx
+        xxx
+        xxxx
+        xxxxx*/
+        for (i = 1; i <= 20; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("x");
+            }
+            document.write("<br />");
+        }
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*С помощью двух вложенных циклов нарисуйте следующую пирамидку:
+        1
+        22
+        333
+        4444
+        55555
+        666666
+        7777777
+        88888888
+        999999999*/
+        for (i = 1; i < 10; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(i);
+            }
+            document.write("<br />");
+        }
+
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Нарисуйте пирамиду, как показано на рисунке, воспользовавшись циклом for:
+        xx
+        xxxx
+        xxxxxx
+        xxxxxxxx
+        xxxxxxxxxx*/
+        for (i = 1; i <= 10; i++) {
+            for (j = 1; j <= i; j++) {
+                if (i % 2 === 0) {
+                    document.write("x");                    
+                }
+            }
+            document.write("<br />");
+        }
+
+        document.write('<hr />');
+        document.write('<hr />');
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
