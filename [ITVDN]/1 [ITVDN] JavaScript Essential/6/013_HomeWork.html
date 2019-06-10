@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Продвинутая работа с пользовательскими функциями в JavaScript</title>
+    <script type="text/javascript">
+        /*Дан массив с числами. Выведите последовательно его элементы используя рекурсию и не используя цикл*/
+        function func(arr) {
+            document.write(arr[0] + '.');
+            arr.splice(0, 1);
+            if (arr.length > 0) {
+                func(arr);
+            }
+        }
+
+        var arr = [5, 78, 95, 1, 21, 7, 3, 6, 8, 12, 10, 6];
+        func(arr);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры. И так, пока сумма не станет 
+        однозначным числом (9 и менее).*/
+        var a = 1952;
+
+        function getDigitsSum(a) {
+            var res = (a + '').split('').map(function (item) {
+                return item * 1;
+            }).reduce(function (sum, item) {
+                return sum + item;
+            });
+            a = res;
+            if (res > 9) {
+                return getDigitsSum(a);
+            }
+            document.write(a);
+        }
+        
+        getDigitsSum(a);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
