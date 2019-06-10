@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Практика на работу с пользовательскими функциями</title>
+    <script type="text/javascript">
+        /*Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную функцию ucfirst, 
+    которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно строку с заглавной первой буквой.*/
+        function ucfirst(str) {
+            return str[0].toUpperCase() + str.substr(1, str.length)
+        }
+
+        var str = 'cделайте заглавным первый символ каждого слова этой строки';
+        str = str.split(' ').map(function (item) {
+            return ucfirst(item);
+        }).join(' ');
+
+        document.write(str);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        //Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+        var str = 'var_text_hello';
+
+        var arr = str.split('_');
+        for (i = 1; i < arr.length; i++) {
+            arr[i] = ucfirst(arr[i]);
+        }
+        str = arr.join('');
+        document.write(str);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. Функция первым параметром 
+        должна принимать текст элемента, а вторым - массив, в котором делается поиск. Функция должна возвращать true или false.*/
+        function inArray(str, arr) {
+            return arr.indexOf(str) >= 0 ? true : false;
+        }
+
+        //Дана строка, например, '123456'. Сделайте из нее '214365'.
+        var str = '123456';
+        
+        arr = str.split('');
+        for (i = 0; i < arr.length; i++) {
+            if (i % 2 !== 0) {
+                var b = arr[i - 1];
+                arr[i - 1] = arr[i];
+                arr[i] = b;
+            }
+        }
+        str = arr.join('');
+        document.write(str);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

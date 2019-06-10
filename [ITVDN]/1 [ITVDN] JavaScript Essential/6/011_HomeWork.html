@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Правильное использование пользовательских функций</title>
+    <script type="text/javascript">
+        /*Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и меньше 10. 
+        Если это так - пусть функция возвращает true, если не так - false.*/
+
+        function isNumberInRange(num) {
+            return num > 0 && num < 10;
+        }
+
+        isNumberInRange();
+
+        /*Дан массив с числами. Запишите в новый массив только те числа, которые больше нуля и меньше 10-ти. 
+        Для этого используйте вспомогательную функцию isNumberInRange из предыдущей задачи.*/
+
+        var arr = [5, 78, 95, 1, 21, 7, 3, 6, 8, 12, 10, 6];
+        var arr2 = [];
+
+        for (i = 0; i < arr.length; i++) {
+            if (isNumberInRange(arr[i])) {
+                arr2.push(arr[i]);
+            }
+        }
+
+        document.write(arr2);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Сделайте функцию getDigitsSum (digit - это цифра), которая параметром принимает целое число и возвращает сумму его цифр.*/
+        function getDigitsSum(digit) {
+            return (digit + '').split('').map(function (item) {
+                return item * 1;
+            }).reduce(function (sum, item) {
+                return sum + item;
+            })
+        }
+
+        getDigitsSum();
+
+        /*Найдите все года от 1 до 2019, сумма цифр которых равна 13. Для этого используйте вспомогательную функцию getDigitsSum*/
+        var arr = [];
+
+        for (i = 0; i < 2020; i++) {
+            if (getDigitsSum([i]) === 13) {
+                arr.push(i);
+            }
+        }
+
+        document.write(arr);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет. 
+        Если четное - пусть функция возвращает true, если нечетное - false.*/
+        function isEven(even) {
+            return even % 2 === 0;
+        }
+
+        isEven();
+
+        /*Дан массив с целыми числами. Создайте из него новый массив, где останутся лежать только четные из этих чисел. 
+        Для этого используйте вспомогательную функцию isEven из предыдущей задачи.*/
+        var arr = [5, 78, 95, 1, 21, 7, 3, 6, 8, 12, 10, 6];
+        var arr2 = [];
+
+        for (i = 0; i < arr.length; i++) {
+            if (isEven(arr[i])) {
+                arr2.push(arr[i]);
+            }
+        }
+
+        document.write(arr2);
+        document.write('<hr />');
+        document.write('<hr />');
+
+        /*Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится
+        данное число).*/
+
+        function getDivisors(a) {
+            var arr = [];
+
+            for (i = 1; i <= a; i++) {
+                if (a % i === 0) {
+                    arr.push(i);
+                }
+            }
+            return arr;            
+        }               
+
+        var a = 534;     
+        document.write(getDivisors(a));
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
