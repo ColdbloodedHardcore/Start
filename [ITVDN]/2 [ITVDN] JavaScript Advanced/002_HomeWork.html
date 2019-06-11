@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Урок 2. Работа с документами</title>
+    <script type="text/javascript">
+        /*Разработайте страницу с произвольным количеством HTML элементов. Создайте модуль, который после загрузки страницы поменяет 
+        текст во всех параграфах на PARAGRAPH. Вы должны разработать две версии модуля с использованием объекта в качестве пространства 
+        имен и с использованием анонимной функции.*/
+
+        window.onload = function() {
+            var upp = document.getElementsByTagName("p"); 
+
+            for (i = 0; i < upp.length; i++) {
+                upp[i].innerHTML = 'PARAGRAPH';
+            }            
+        } 
+
+        /*Создайте страницу с кнопкой, при нажатии по кнопке на странице должен создаваться параграф с произвольным текстом. 
+        После создания 10 параграфов все они должны быть удалены.*/
+
+        function addParagraph() {
+            var counter = 0;
+            counter++;
+            var paragraph = document.getElementById("newParagraph");
+
+            var newP = document.createElement("p");
+            newP.innerHTML = "New Paragraph";
+
+            if (paragraph.children.length === 10) {
+
+                while (paragraph.firstChild) {
+                    paragraph.removeChild(paragraph.firstChild)
+                }
+                return;
+            }
+            paragraph.appendChild(newP);
+
+        };
+        
+        
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+    </div>
+    <div>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+    </div>
+    <div>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <p>paragraph</p>
+    </div>
+
+    <input type="button" onclick="addParagraph()" value="Add Paragraph">
+    <div id="newParagraph">
+    
+    </div>
+</body>
+
+</html>
